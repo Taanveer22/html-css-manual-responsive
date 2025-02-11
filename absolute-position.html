@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            background-color: red;
+            width: 600px;
+            height: 400px;
+            /* this is the parent position that is very important */
+            position: relative;
+            /* position: absolute; */
+            /* position: sticky; */
+        }
+
+        .child{
+            background-color: green;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        .child2{
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            right:0px;
+            bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Absolute Positon: Change positon depend on parent positon if exist(except static position) otherwise change depend on body tag</h2>
+
+    <div class="parent">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum illo molestiae eos ut facere maiores consequatur unde, cumque voluptas sequi? Ex dolore praesentium et amet!</p>
+        <div class="child"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, corporis.</p>
+        <div class="child2"></div>
+    </div>
+    
+</body>
+</html>
